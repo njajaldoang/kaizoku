@@ -10,6 +10,17 @@ uruts=sbin
 protz=dev
 prots=sys
 protx=substr
+function bannerAuthor() {
+printf "\n    =========================\n"
+printf "🔥🔥Saat ini Anda sedang berada pada folder $pwdd🔥🔥🔥\n "
+printf "\n    =========================\n"
+printf " >>> SUBDOMAIN NGINX CHECKER <<< \n"
+printf "         By: Idr@ CakepZ \n"
+printf "    =========================\n\n"
+printf "         Author: Idr@ CakepZ \n"
+printf "         recode: Yaddy CakepZ \n"
+}
+
 function cling() {
 clear
 }
