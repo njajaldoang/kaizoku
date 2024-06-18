@@ -289,6 +289,131 @@ echo "    headers:" | tee -a ${FOLDER}/${output8}
 echo "      Host: ${hosts}" | tee -a ${FOLDER}/${output8}
 }
 
+function VlessNTLSuntukSTBpswd2() {
+echo "##### VLESS NTLS ISAT EDU WILDCARD" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌IsateduWild❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: 141.193.213.20" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: api.webex.com.${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: /vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: api.webex.com.${hosts}" | tee -a ${FOLDER}/${output8}
+
+echo "##### VLESS NTLS XL VIDIO WILDCARD" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌XlvidioWild❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: 104.22.5.240" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: quiz.int.vidio.com.${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: /vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: quiz.int.vidio.com.${hosts}" | tee -a ${FOLDER}/${output8}
+echo "##### VLESS NTLS XCL M WILDCARD" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌XclWild❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: 104.18.214.235" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: df.game.naver.com.${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: /vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: df.game.naver.com.${hosts}" | tee -a ${FOLDER}/${output8}
+
+echo "##### VLESS NTLS XL VIDIO" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌Xlvidio❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: ${bugvidio}" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: ${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: /vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: ${hosts}" | tee -a ${FOLDER}/${output8}
+echo "##### VLESS NTLS XCL M" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌Xcl❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: ${bugxcl}" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: ${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: /vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: ${hosts}" | tee -a ${FOLDER}/${output8}
+echo "##### VLESS NTLS ISAT OPOK HETOKEN" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌ISATopok❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: ${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: " | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: http://myim3-he.ioh.co.id/api/v1/token/hetoken/vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: ${hosts}" | tee -a ${FOLDER}/${output8}
+
+echo "##### VLESS NTLS ISAT OPOK RAMADHAN" | tee -a ${FOLDER}/${output8}
+echo "- name: NTLS❌ISATopokR❌${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  type: vless" | tee -a ${FOLDER}/${output8}
+echo "  server: ${hosts}" | tee -a ${FOLDER}/${output8}
+echo "  port: 80" | tee -a ${FOLDER}/${output8}
+echo "  uuid: ${de2}" | tee -a ${FOLDER}/${output8}
+echo "  alterId: 0" | tee -a ${FOLDER}/${output8}
+echo "  cipher: auto" | tee -a ${FOLDER}/${output8}
+echo "  udp: true" | tee -a ${FOLDER}/${output8}
+echo "  tls: false" | tee -a ${FOLDER}/${output8}
+echo "  skip-cert-verify: false" | tee -a ${FOLDER}/${output8}
+echo "  servername: " | tee -a ${FOLDER}/${output8}
+echo "  network: ws" | tee -a ${FOLDER}/${output8}
+echo "  ws-opts:" | tee -a ${FOLDER}/${output8}
+echo "    path: http://202.152.162.239/lpisat/ramadhan/vless" | tee -a ${FOLDER}/${output8}
+echo "    headers:" | tee -a ${FOLDER}/${output8}
+echo "      Host: ${hosts}" | tee -a ${FOLDER}/${output8}
+}
+
 function VlessNTLSuntukHAPE1() {
 echo "##### VLESS NTLS ISAT OPOK HETOKEN" | tee -a ${FOLDER}/${output7}
 echo "vless://${de1}@${hosts}:80?path=http%3A%2F%2Fmyim3-he.ioh.co.id%2Fapi%2Fv1%2Ftoken%2Fhetoken%2Fvless&security=none&encryption=none&host=${hosts}&type=ws#ISAT+OPOK+HETOKEN" | tee -a ${FOLDER}/${output7}
