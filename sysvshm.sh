@@ -10,6 +10,39 @@ uruts=sbin
 protz=dev
 prots=sys
 protx=substr
+output=hasil.txt
+output2=hasil2.txt
+output3=VmTrojanGrpcSTB.yaml
+output4=VlessTrojanwsSTB.yaml
+output5=VlessTrojanwsHAPE.txt
+output6=VTrojanGrpcHAPE.txt
+output7=VntlsHAPE.txt
+output8=VntlsSTB.yaml
+
+function createnewfile(){
+    touch ${FOLDER}/${output}
+    touch ${FOLDER}/${output2}
+    touch ${FOLDER}/${output3}
+    touch ${FOLDER}/${output4}
+    touch ${FOLDER}/${output5}
+    touch ${FOLDER}/${output6}
+    touch ${FOLDER}/${output7}
+    touch ${FOLDER}/${output8}
+    echo "file telah diperbarui"
+}
+
+function hapusfilelawas(){
+    rm -f ${FOLDER}/${output}
+    rm -f ${FOLDER}/${output2}
+    rm -f ${FOLDER}/${output3}
+    rm -f ${FOLDER}/${output4}
+    rm -f ${FOLDER}/${output5}
+    rm -f ${FOLDER}/${output6}
+    rm -f ${FOLDER}/${output7}
+    rm -f ${FOLDER}/${output8}
+    echo "file lama sudah dihapus"
+}
+
 function bannerAuthor() {
 printf "\n    =========================\n"
 printf "🔥🔥Saat ini Anda sedang berada pada folder $pwdd🔥🔥🔥\n "
