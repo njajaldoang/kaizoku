@@ -83,6 +83,26 @@ printf "    =========================\n"
 printf "         Recode: Yaddy CakepZ \n\n"
 }
 
+function end() {
+exit 0
+}
+
+function abort() {
+exit 1
+} 
+
+function bertanya() {
+echo "Tulis Nama List File Yang Sudah Kamu Buat !"
+echo "contoh: listdomain.txt "
+read -p 'Target List File: ' list
+    if [ ! -f $list ]; then
+	    echo "$list Gk Ada"
+	    echo "Silakan Buat file berisi daftar domain dengan nama $list "
+	    echo "Kemudian Coba lagi "
+	    abort
+    fi
+}
+
 function cling() {
 clear
 }
@@ -469,23 +489,4 @@ echo "##### VLESS NTLS XL VIDIO WILDCARD" | tee -a ${FOLDER}/${output7}
 echo "vless://${de2}@104.22.5.240:80?path=%2Fvless&security=none&encryption=none&host=quiz.int.vidio.com.${hosts}&type=ws#wildcard+NTLS+xl+VIDIO" | tee -a ${FOLDER}/${output7}
 echo "##### VLESS NTLS XCL WILDCARD" | tee -a ${FOLDER}/${output7}
 echo "vless://${de2}@104.18.214.235:80?path=%2Fvless&security=none&encryption=none&host=df.game.naver.com.${hosts}&type=ws#wildcard++NTLS+xl+XCL+M" | tee -a ${FOLDER}/${output7}
-}
-function end() {
-exit 0
-}
-
-function abort() {
-exit 1
-} 
-
-function bertanya() {
-echo "Tulis Nama List File Yang Sudah Kamu Buat !"
-echo "contoh: listdomain.txt "
-read -p 'Target List File: ' list
-    if [ ! -f $list ]; then
-	    echo "$list Gk Ada"
-	    echo "Silakan Buat file berisi daftar domain dengan nama $list "
-	    echo "Kemudian Coba lagi "
-	    abort
-    fi
 }
