@@ -29,11 +29,6 @@ output5=VlessTrojanwsHAPE.txt
 output6=VTrojanGrpcHAPE.txt
 output7=VntlsHAPE.txt
 output8=VntlsSTB.yaml
-de1=1d1c1d94-6987-4658-a4dc-8821a30fe7e0
-de2=cfbbaafc-8d52-450c-9fb0-145bc8221e6d
-de3=3311d893-72ea-4e02-b64d-71b7aadddf76
-de4=36326ea2-6994-4d53-bcd5-f43bbdaec562
-de5=47517491-8be8-413c-bda8-68651fea0188
 
 function createnewfile(){
     touch ${FOLDER}/${output}
@@ -61,13 +56,24 @@ function hapusfilelawas(){
 
 function bannerAuthor() {
 printf "\n    =========================\n"
-printf "🔥🔥Saat ini Anda sedang berada pada folder $pwdd🔥🔥🔥\n "
+printf "🔥🔥 CURRENT DIR:  $current_dir 🔥🔥🔥\n "
 printf "\n    =========================\n"
 printf " >>> SUBDOMAIN NGINX CHECKER <<< \n"
 printf "         By: Idr@ CakepZ \n"
-printf "    =========================\n\n"
-printf "         Author: Idr@ CakepZ \n"
-printf "         recode: Yaddy CakepZ \n"
+printf "    =========================\n"
+printf "         Recode: Yaddy CakepZ \n\n"
+}
+
+function bertanya() {
+echo "Tulis Nama List File Yang Sudah Kamu Buat !"
+echo "contoh: listdomain.txt "
+read -p 'Target List File: ' list
+    if [ ! -f $list ]; then
+	    echo "$list Gk Ada"
+	    echo "Silakan Buat file berisi daftar domain dengan nama $list "
+	    echo "Kemudian Coba lagi "
+	    exit 1
+    fi
 }
 
 function cling() {
