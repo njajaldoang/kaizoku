@@ -30,6 +30,11 @@ output6=VTrojanGrpcHAPE.txt
 output7=VntlsHAPE.txt
 output8=VntlsSTB.yaml
 
+function pindahkan() {
+    mv *.txt ${output_dir}
+    mv *.yaml ${output_dir}
+}
+
 function print() {
 echo "$1"
 }
