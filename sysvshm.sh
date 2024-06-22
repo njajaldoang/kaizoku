@@ -64,18 +64,6 @@ printf "    =========================\n"
 printf "         Recode: Yaddy CakepZ \n\n"
 }
 
-function bertanya() {
-echo "Tulis Nama List File Yang Sudah Kamu Buat !"
-echo "contoh: listdomain.txt "
-read -p 'Target List File: ' list
-    if [ ! -f $list ]; then
-	    echo "$list Gk Ada"
-	    echo "Silakan Buat file berisi daftar domain dengan nama $list "
-	    echo "Kemudian Coba lagi "
-	    exit 1
-    fi
-}
-
 function cling() {
 clear
 }
@@ -478,3 +466,15 @@ exit 0
 function abort() {
 exit 1
 } 
+
+function bertanya() {
+echo "Tulis Nama List File Yang Sudah Kamu Buat !"
+echo "contoh: listdomain.txt "
+read -p 'Target List File: ' list
+    if [ ! -f $list ]; then
+	    echo "$list Gk Ada"
+	    echo "Silakan Buat file berisi daftar domain dengan nama $list "
+	    echo "Kemudian Coba lagi "
+	    abort
+    fi
+}
