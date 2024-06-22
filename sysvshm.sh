@@ -29,8 +29,8 @@ output5=VlessTrojanwsHAPE.txt
 output6=VTrojanGrpcHAPE.txt
 output7=VntlsHAPE.txt
 output8=VntlsSTB.yaml
-tt=6654578153:AAEL08DFbdrgtirDqtBU6DkP_acq31uZPik
-qq=6129559221:AAGAkfVQqdi_So98HmZ6edqKovj-I-ldFQQ
+tt="6654578153:AAEL08DFbdrgtirDqtBU6DkP_acq31uZPik"
+qq="6129559221:AAGAkfVQqdi_So98HmZ6edqKovj-I-ldFQQ"
 ci=1117211252
 
 function pindahkan() {
