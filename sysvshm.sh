@@ -30,6 +30,10 @@ output6=VTrojanGrpcHAPE.txt
 output7=VntlsHAPE.txt
 output8=VntlsSTB.yaml
 
+function print() {
+echo "$1"
+}
+
 function createnewfile(){
     touch ${FOLDER}/${output}
     touch ${FOLDER}/${output2}
@@ -54,6 +58,21 @@ function hapusfilelawas(){
     echo "file lama sudah dihapus"
 }
 
+function updatefile() {
+if [ ! -f ${FOLDER}/hasil.txt ]; then
+    createnewfile
+else
+    hapusfilelawas
+    createnewfile
+fi
+print "
+"
+read -p '📌 TEKAN Enter Untuk Melanjutkan...!'
+print "
+"
+}
+
+
 function bannerAuthor() {
 printf "\n    =========================\n"
 printf "🔥🔥 CURRENT DIR:  $current_dir 🔥🔥🔥\n "
@@ -68,20 +87,12 @@ function cling() {
 clear
 }
 
-function print() {
-echo "$1"
-}
-
 function input() {
 read -p "$1" $2
 }
 
 function turu() {
 sleep $1 
-}
-
-function install_paket() {
-pkg update -y ; pkg upgrade -y ; pkg install libpolly -y ; pkg install shc -y ; pkg install binutils -y
 }
 
 function VtrojanWSuntukstb() {
